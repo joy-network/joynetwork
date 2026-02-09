@@ -58,13 +58,8 @@
     }
 
     h3 {
-      margin: 0 0 10px 0;
       font-size: 22px;
-    }
-
-    h4 {
-      margin-top: 24px;
-      font-size: 17px;
+      margin-bottom: 8px;
     }
 
     .card {
@@ -77,19 +72,23 @@
 
     .excerpt {
       color: #374151;
+      margin-bottom: 12px;
     }
 
-    .toggle {
-      color: #0f172a;
-      font-weight: 600;
+    details summary {
       cursor: pointer;
-      display: inline-block;
+      font-weight: 600;
+      color: #0f172a;
       margin-top: 10px;
+      list-style: none;
     }
 
-    .content {
+    details summary::-webkit-details-marker {
       display: none;
-      margin-top: 24px;
+    }
+
+    details[open] summary {
+      margin-bottom: 16px;
     }
 
     ul {
@@ -107,13 +106,6 @@
       font-size: 14px;
     }
   </style>
-
-  <script>
-    function toggleContent(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === "block" ? "none" : "block";
-    }
-  </script>
 </head>
 
 <body>
@@ -136,8 +128,9 @@
   <h2>About</h2>
   <div class="card">
     <p>
-      A recruitment partner connecting the right people with the right roles
-      through structured, transparent, and respectful processes.
+      A recruitment partner specializing in connecting the right people with
+      the right roles through structured, transparent, and respectful
+      processes.
     </p>
     <p>
       Support extends across HR, Operations, Marketing, and Localization to
@@ -149,16 +142,16 @@
 <section id="insights">
   <h2>Insights & Sharing</h2>
 
-  <!-- ARTICLE 1 -->
   <div class="card">
     <h3>Find Remote Jobs That Fit You</h3>
     <p class="excerpt">
-      A curated overview of trusted platforms for tech, AI, Web3, and startup
-      professionals seeking quality remote work.
+      Trusted platforms for tech, AI, Web3, and startup professionals seeking
+      quality remote work.
     </p>
-    <span class="toggle" onclick="toggleContent('post1')">Read more ↓</span>
 
-    <div class="content" id="post1">
+    <details>
+      <summary>Read more</summary>
+
       <h4>🌱 Talent Networks</h4>
       <ul>
         <li><strong>Braintrust</strong> – Curated, no-fee talent network.</li>
@@ -180,32 +173,32 @@
         <li><strong>Web3.career</strong></li>
         <li><strong>Alignerr / Outlier / Mercor</strong></li>
       </ul>
-    </div>
+    </details>
   </div>
 
-  <!-- ARTICLE 2 -->
   <div class="card">
     <h3>Writing a Tech CV That Opens Doors</h3>
     <p class="excerpt">
-      How tech professionals can turn experience into impact and stand out in
-      competitive hiring markets.
+      How tech professionals can turn experience into clear, compelling
+      impact.
     </p>
-    <span class="toggle" onclick="toggleContent('post2')">Read more ↓</span>
 
-    <div class="content" id="post2">
+    <details>
+      <summary>Read more</summary>
+
       <ul>
         <li><strong>Lead with outcomes</strong>, not tasks.</li>
         <li><strong>Speak the company’s language</strong>.</li>
         <li><strong>Keep it clean and readable</strong>.</li>
         <li><strong>Add a short professional summary</strong>.</li>
-        <li><strong>Quantify impact</strong> wherever possible.</li>
+        <li><strong>Quantify impact</strong>.</li>
       </ul>
 
       <p>
-        A CV is a professional story. Clarity and structure create trust and
+        A CV is a professional story. Clarity and structure create
         differentiation.
       </p>
-    </div>
+    </details>
   </div>
 
 </section>
@@ -230,9 +223,8 @@
 </section>
 
 <footer>
-  © 2026 · Confidential & Partnership-Driven Recruitment
+  © 2026 · Confidential & Partnership-cruitment
 </footer>
 
 </body>
 </html>
-
