@@ -11,30 +11,43 @@
       font-family: "Inter", Arial, sans-serif;
       background-color: #f5f7fa;
       color: #1f2937;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
       background-color: #0f172a;
-      color: white;
+      color: #ffffff;
       padding: 80px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 18px;
       opacity: 0.9;
+      max-width: 700px;
+      margin: auto;
     }
 
-    .container {
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: #cbd5f5;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
       max-width: 960px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 70px 20px;
     }
 
     h2 {
@@ -45,46 +58,22 @@
     }
 
     .card {
-      background: white;
-      padding: 24px;
-      margin-bottom: 24px;
+      background: #ffffff;
+      padding: 28px;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #0f172a;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 14px;
-      margin-top: 10px;
-    }
-
-    .btn.secondary {
-      background-color: #334155;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 4px;
-      border: 1px solid #d1d5db;
-      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
     }
 
     footer {
-      background: #e5e7eb;
+      background-color: #e5e7eb;
+      padding: 30px 20px;
       text-align: center;
-      padding: 24px;
       font-size: 14px;
       color: #374151;
     }
 
-    footer a {
+    a {
       color: #0f172a;
       text-decoration: none;
       font-weight: 500;
@@ -96,92 +85,92 @@
 
 <header>
   <h1>Recruitment Partner</h1>
-  <p>Connecting qualified candidates with trusted hiring partners</p>
-  <a href="#jobs" class="btn">View Open Positions</a>
-  <a href="#apply" class="btn secondary">Submit Your CV</a>
+  <p>
+    Connecting qualified talent with trusted hiring partners through
+    transparent, professional, and partnership-driven recruitment.
+  </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#insights">Insights</a>
+    <a href="#positions">Open Positions</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section class="container">
+<section id="about">
   <h2>About</h2>
   <div class="card">
     <p>
-      I specialize in employer branding and talent acquisition, supporting
-      candidates and business partners through transparent and structured
-      recruitment processes.
+      A professional recruitment partner specializing in connecting the right
+      people with the right roles.
     </p>
     <p>
-      Working in collaboration with <strong>Joy Network</strong>, a global
-      recruitment partner connecting talent with innovative companies across
-      the US, EU/UK, APAC, and Southeast Asia.
+      The focus is on delivering transparent, structured, and respectful
+      recruitment processes for both candidates and hiring partners. In
+      addition to talent acquisition, support is provided across HR,
+      Operations, Marketing, and Localization to help teams scale sustainably
+      while remaining aligned with local markets, cultures, and business
+      objectives.
+    </p>
+    <p>
+      Collaboration is approached as a long-term partnership built on trust,
+      clarity, and mutual value — not transactions.
     </p>
   </div>
 </section>
 
-<section class="container">
-  <h2>Insights</h2>
-
+<section id="insights">
+  <h2>Insights & Sharing</h2>
   <div class="card">
-    <h3>What Hiring Managers Evaluate During CV Screening</h3>
     <p>
-      A breakdown of how recruiters and hiring managers assess candidate
-      profiles in the first review stage.
+      This space shares practical insights from recruitment, employer
+      branding, and cross-functional collaboration.
     </p>
-    <a class="btn">Read More</a>
-  </div>
-
-  <div class="card">
-    <h3>Preparing for a Structured Interview Process</h3>
     <p>
-      Key steps candidates should take to perform effectively in
-      competency-based interviews.
+      Content is based on real experiences working with candidates and hiring
+      partners across different regions, with a focus on transparent hiring
+      practices, candidate experience, confidential roles, and building
+      strong, sustainable partnerships between talent and organizations.
     </p>
-    <a class="btn">Read More</a>
+    <p>
+      Articles will be published regularly to support clarity, quality, and
+      long-term value in the hiring process.
+    </p>
   </div>
 </section>
 
-<section id="jobs" class="container">
+<section id="positions">
   <h2>Open Positions</h2>
-
   <div class="card">
-    <h3>Senior Backend Engineer</h3>
-    <p>Industry: Fintech<br/>Location: Remote</p>
-    <p>This role is managed in collaboration with a trusted hiring partner.</p>
-    <a href="https://www.linkedin.com/company/joy-network/" target="_blank" class="btn">
-      Apply via Partner
-    </a>
-  </div>
-
-  <div class="card">
-    <h3>HR Executive</h3>
-    <p>Location: Ho Chi Minh City</p>
-    <p>Apply directly to be reviewed and supported throughout the recruitment process.</p>
-    <a href="#apply" class="btn">Apply Directly</a>
+    <p>
+      Opportunities are managed in collaboration with selected and trusted
+      hiring partners across multiple markets. Roles may include confidential,
+      high-growth, and strategic positions.
+    </p>
+    <p>
+      Open positions are introduced to suitable candidates based on
+      alignment, experience, and mutual interest. Clear communication and
+      professional support are maintained throughout the recruitment process.
+    </p>
   </div>
 </section>
 
-<section id="apply" class="container">
-  <h2>Submit Your CV</h2>
+<section id="contact">
+  <h2>Contact</h2>
   <div class="card">
-    <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="LinkedIn profile or CV link"></textarea>
-      <button type="submit" class="btn">Submit Profile</button>
-    </form>
+    <p><strong>For candidates</strong><br/>
+      Email: <a href="mailto:joyle.hr.talent@gmail.com">joyle.hr.talent@gmail.com</a>
+    </p>
+
+    <p><strong>For clients / partners</strong><br/>
+      Email: <a href="mailto:joywithwork@gmail.com">joywithwork@gmail.com</a>
+    </p>
+
+    <p><strong>Telegram</strong><br/>
+      <a href="https://t.me/joyl123" target="_blank">https://t.me/joyl123</a>
+    </p>
   </div>
 </section>
 
 <footer>
-  <p>
-    Independent recruitment services · Confidential & candidate-first approach
-  </p>
-  <p>
-    © 2026 · Connected with
-    <a href="https://www.linkedin.com/company/joy-network/" target="_blank">
-      Joy Network
-    </a>
-  </p>
-</footer>
-
-</body>
-</html>
+  © 2026 Recruitment Partner · Confidential & Partnership-Driven Recruitme
