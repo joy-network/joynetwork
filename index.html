@@ -86,6 +86,16 @@
       text-align: center;
       font-size: 14px;
     }
+
+    /* 🔒 HIDE ALL ARTICLES BY DEFAULT */
+    .article {
+      display: none;
+    }
+
+    /* ✅ SHOW ONLY WHEN TARGETED */
+    .article:target {
+      display: block;
+    }
   </style>
 </head>
 
@@ -115,7 +125,6 @@
   </div>
 </section>
 
-<!-- INSIGHTS LIST -->
 <section id="insights">
   <h2>Insights & Sharing</h2>
 
@@ -137,8 +146,9 @@
   </div>
 </section>
 
-<!-- FULL ARTICLES -->
-<section id="article-remote">
+<!-- FULL ARTICLES (HIDDEN BY DEFAULT) -->
+
+<section id="article-remote" class="article">
   <h2>Find Remote Jobs That Fit You</h2>
   <div class="card">
     <ul>
@@ -147,10 +157,11 @@
       <li><strong>Wellfound</strong>, CryptoJobsList, Web3.career</li>
       <li><strong>Alignerr</strong>, Outlier, Mercor</li>
     </ul>
+    <p><a href="#insights">← Back to Insights</a></p>
   </div>
 </section>
 
-<section id="article-cv">
+<section id="article-cv" class="article">
   <h2>Writing a Tech CV That Opens Doors</h2>
   <div class="card">
     <ul>
@@ -160,6 +171,7 @@
       <li>Add a professional summary</li>
       <li>Quantify impact</li>
     </ul>
+    <p><a href="#insights">← Back to Insights</a></p>
   </div>
 </section>
 
@@ -188,4 +200,3 @@
 
 </body>
 </html>
-
