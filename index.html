@@ -9,14 +9,14 @@
     body {
       margin: 0;
       font-family: Inter, Arial, sans-serif;
-      background-color: #f5f7fa;
+      background: #f5f7fa;
       color: #1f2937;
       line-height: 1.75;
     }
 
     header {
-      background-color: #0f172a;
-      color: #ffffff;
+      background: #0f172a;
+      color: #fff;
       padding: 80px 20px;
       text-align: center;
     }
@@ -27,9 +27,9 @@
     }
 
     header p {
-      font-size: 18px;
       max-width: 720px;
       margin: auto;
+      font-size: 18px;
       opacity: 0.9;
     }
 
@@ -58,50 +58,31 @@
     }
 
     h3 {
-      font-size: 22px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .card {
-      background: #ffffff;
+      background: #fff;
       padding: 36px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 12px rgba(0,0,0,.06);
       margin-bottom: 24px;
     }
 
     .excerpt {
       color: #374151;
-      margin-bottom: 12px;
-    }
-
-    details summary {
-      cursor: pointer;
-      font-weight: 600;
-      color: #0f172a;
-      margin-top: 10px;
-      list-style: none;
-    }
-
-    details summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details[open] summary {
-      margin-bottom: 16px;
-    }
-
-    ul {
-      margin-left: 20px;
-    }
-
-    li {
       margin-bottom: 10px;
     }
 
+    a {
+      color: #0f172a;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
     footer {
-      background-color: #e5e7eb;
-      padding: 30px 20px;
+      background: #e5e7eb;
+      padding: 30px;
       text-align: center;
       font-size: 14px;
     }
@@ -128,17 +109,13 @@
   <h2>About</h2>
   <div class="card">
     <p>
-      A recruitment partner specializing in connecting the right people with
-      the right roles through structured, transparent, and respectful
-      processes.
-    </p>
-    <p>
-      Support extends across HR, Operations, Marketing, and Localization to
-      help teams scale sustainably across markets.
+      A recruitment partner connecting the right people with the right roles
+      through structured, transparent, and respectful processes.
     </p>
   </div>
 </section>
 
+<!-- INSIGHTS LIST -->
 <section id="insights">
   <h2>Insights & Sharing</h2>
 
@@ -148,59 +125,42 @@
       Trusted platforms for tech, AI, Web3, and startup professionals seeking
       quality remote work.
     </p>
-
-    <details>
-      <summary>Read more</summary>
-
-      <h4>🌱 Talent Networks</h4>
-      <ul>
-        <li><strong>Braintrust</strong> – Curated, no-fee talent network.</li>
-        <li><strong>Arc.dev</strong> – Vetted remote roles.</li>
-        <li><strong>Flexiple</strong> – Selective, high-quality freelance work.</li>
-      </ul>
-
-      <h4>🌍 Remote Job Boards</h4>
-      <ul>
-        <li><strong>We Work Remotely</strong></li>
-        <li><strong>Remote OK</strong></li>
-        <li><strong>Remotive</strong></li>
-      </ul>
-
-      <h4>🚀 Startup, Web3 & AI</h4>
-      <ul>
-        <li><strong>Wellfound</strong></li>
-        <li><strong>CryptoJobsList</strong></li>
-        <li><strong>Web3.career</strong></li>
-        <li><strong>Alignerr / Outlier / Mercor</strong></li>
-      </ul>
-    </details>
+    <a href="#article-remote">Read article →</a>
   </div>
 
   <div class="card">
     <h3>Writing a Tech CV That Opens Doors</h3>
     <p class="excerpt">
-      How tech professionals can turn experience into clear, compelling
-      impact.
+      Turning technical experience into clear, compelling impact.
     </p>
-
-    <details>
-      <summary>Read more</summary>
-
-      <ul>
-        <li><strong>Lead with outcomes</strong>, not tasks.</li>
-        <li><strong>Speak the company’s language</strong>.</li>
-        <li><strong>Keep it clean and readable</strong>.</li>
-        <li><strong>Add a short professional summary</strong>.</li>
-        <li><strong>Quantify impact</strong>.</li>
-      </ul>
-
-      <p>
-        A CV is a professional story. Clarity and structure create
-        differentiation.
-      </p>
-    </details>
+    <a href="#article-cv">Read article →</a>
   </div>
+</section>
 
+<!-- FULL ARTICLES -->
+<section id="article-remote">
+  <h2>Find Remote Jobs That Fit You</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Braintrust</strong>, Arc.dev, Flexiple</li>
+      <li><strong>We Work Remotely</strong>, Remote OK, Remotive</li>
+      <li><strong>Wellfound</strong>, CryptoJobsList, Web3.career</li>
+      <li><strong>Alignerr</strong>, Outlier, Mercor</li>
+    </ul>
+  </div>
+</section>
+
+<section id="article-cv">
+  <h2>Writing a Tech CV That Opens Doors</h2>
+  <div class="card">
+    <ul>
+      <li>Lead with outcomes</li>
+      <li>Speak the company’s language</li>
+      <li>Keep it clean and readable</li>
+      <li>Add a professional summary</li>
+      <li>Quantify impact</li>
+    </ul>
+  </div>
 </section>
 
 <section id="positions">
@@ -217,14 +177,15 @@
   <h2>Contact</h2>
   <div class="card">
     <p><strong>For candidates</strong><br/>joyle.hr.talent@gmail.com</p>
-    <p><strong>For clients / partners</strong><br/>joywithwork@gmail.com</p>
+    <p><strong>For partners</strong><br/>joywithwork@gmail.com</p>
     <p><strong>Telegram</strong><br/>https://t.me/joyl123</p>
   </div>
 </section>
 
 <footer>
-  © 2026 · Confidential & Partnership-cruitment
+  © 2026 · Recruitment Partnership
 </footer>
 
 </body>
 </html>
+
